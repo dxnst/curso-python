@@ -1,0 +1,83 @@
+## Jupyter Notebook: Guía Básica de Inicio
+
+ 1. ¿Qué es un Jupyter Notebook?
+ ---------------------------------
+ Un Jupyter Notebook es una herramienta que permite combinar código, texto y visualizaciones en un mismo documento.
+ Es muy utilizado en ciencia de datos, aprendizaje automático, análisis de datos, entre otros.
+
+ 2. Tipos de celdas en Jupyter Notebook
+ --------------------------------------
+ Existen dos tipos principales de celdas:
+ - **Code**: Para ejecutar código Python.
+ - **Markdown**: Para escribir texto, explicaciones o fórmulas.
+
+ 3. Cómo cambiar el tipo de celda
+ --------------------------------
+ - Haga clic en la celda y en la barra superior verá un menú desplegable que dice "Code".
+ - Cámbielo a "Markdown" si desea escribir texto en lugar de código.m
+
+ 4. Escribiendo texto en Markdown
+ --------------------------------
+ En una celda Markdown, puede usar:
+ - Encabezados: # Título 1, ## Título 2, ### Título 3
+ - Listas:
+   - Item 1
+   - Item 2
+ - Negritas y cursivas:
+   - **Negrita**: **texto**
+   - *Cursiva*: *texto*
+ - Código en línea: `print("Hola Mundo")`
+ - Bloques de código:
+ ```python
+ print("Hola Mundo")
+ ```
+
+ 5. Ejecutar una celda
+ ---------------------
+ - Presione **Shift + Enter** para ejecutar la celda y pasar a la siguiente.
+ - Presione **Ctrl + Enter** para ejecutar la celda sin moverse a la siguiente.
+
+ 6. Escribiendo y ejecutando código Python
+ ----------------------------------------
+ A continuación, ejecutemos un simple "Hola Mundo":
+rint("Hola Mundo")
+
+ 7. Insertar celdas nuevas
+ -------------------------
+ - Presione **A** para insertar una celda arriba.
+ - Presione **B** para insertar una celda abajo.
+
+ 8. Atajos útiles
+ ----------------
+ - **M**: Convertir la celda en Markdown.
+ - **Y**: Convertir la celda en Código.
+ - **D + D**: Eliminar una celda.
+ - **Shift + Enter**: Ejecutar la celda.
+
+
+ 9. Visualización de datos
+ --------------------------
+Jupyter permite visualizar datos fácilmente. Por ejemplo, usemos pandas para ver un DataFrame:
+
+import pandas as pd
+
+data = {'Nombre': ['Ana', 'Luis', 'Sofía'], 'Edad': [23, 30, 22]}
+df = pd.DataFrame(data)
+df
+
+10. Gráficos rápidos
+---------------------
+Puede crear gráficos directamente en el notebook:
+
+
+import matplotlib.pyplot as plt
+
+plt.plot([1, 2, 3], [4, 5, 6])
+plt.title('Gráfico simple')
+plt.show()
+
+ 11. Guardar el notebook
+ ------------------------
+ - Haga clic en "File" > "Download as" > "Notebook (.ipynb)" para guardarlo.
+ - También puede exportarlo como PDF o HTML.
+
